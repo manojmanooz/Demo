@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block metadescription %}
+    {% if category %}
+        {{product.description|truncatewords:122 }}
+
+    {% endif %}
+{% endblock %}
+{% block title %}
+    {% if category %}
+        {{product.name}}
+
+    {% endif %}
+{% endblock %}
+{% block content %}
+<div class="center">
+    <div class="mx_auto">
+        <p><a href="{% url 'ecommerceapp:allProdCat' %}">Home</a> | <a href="{{product.category.get_url}}">{{product.category}}</a>|{{product.name}}</p>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img class="image" src="{{product.image.url}}" alt="{{product.name}}">
+        </div>
+        <div class="col">
+
+                <h1 id="name">{{product.name}}</h1>
+                <p id="desc_title">Product Description</p>
+                <p id="desc">{{product.description}}</p>
+                <p id="price"><b>₹ <b>{{product.price}}</p>
+                {% if product.stock <= 0 %}
+                <p>Out Of Stock</p>
+                {% else %}
+                <a class="button btn btn-primary" href="{% url 'cart_app:AddCart' product.id %}">ADD TO CART</a>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}

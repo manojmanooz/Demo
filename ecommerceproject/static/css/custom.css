@@ -1,0 +1,106 @@
+.body
+{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color:green;
+}
+
+
+.nav-item
+{
+    letter-spacing: .2em;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.dropdown-item
+{
+    letter-spacing: .2em;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.my_footer p
+{
+    padding-top:20px;
+    font-size:14px;
+}
+.my_footer
+{
+    background-color:#f8f9fa;
+    height:60px;
+}
+/*** category ***/
+.my_row_class
+{
+    padding-top:15px;
+}
+.my_row_class mx-auto
+{
+    color:#000;
+    font-size:16px;
+}
+.my_image
+{
+    width:100%;
+    height:auto;
+}
+.my_title
+{
+    font-size:16px;
+    text_transform:uppercase;
+    letter-spacing:.2em;
+}
+.my_image_padding
+{
+    padding:5px;
+}
+.my_bottom_margin
+{
+    margin-bottom:10px;
+}
+/*** product page ***/
+.center
+{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align:center;
+  letter-spacing:2px;
+  text-shadow: 1px 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#name
+{
+  letter-spacing:2px;
+  text-shadow: 2px 2px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+#desc_title
+{
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+    font-size: 18px;
+}
+#desc
+{
+    font-family: "Tahoma", "Verdana", sans-serif;
+    font-size: 18px;
+}
+#price
+{
+    font-weight: bold;
+    font-size:20px;
+    font-family: "Copperplate", "Verdana", sans-serif;
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.text-center
+{
+    text-align:center;
+}
+
